@@ -1,0 +1,143 @@
+<div [style.min-height]="'100vh'" class="page-1">
+  
+  <video id="video-background" autoplay muted loop>
+    <source src="assets/home-bg-vid2.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="video-overlay">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="white-box">
+            <h3>Lightning</h3>
+            <hr />
+          </div>
+          
+        </div>
+        <div class="col-md-6">
+          <div class="white-box">
+            <!-- Page Heading -->
+            <h1 class="my-4">
+              Decentralized Energy
+              <small>SAP Blockchain</small>
+            </h1>
+
+            <div class="row">
+              <div class="col-md-12">
+                <p class="">
+                  This Blockchain application demonstrates energy sharing on a network among peers on a grid. The energy trade is based on exchanging coins for green energy provided.
+                </p>
+                <p class="">
+                  Find more detail
+                  <a [routerLink]="['/About']"> about the application. </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div [style.min-height]="'100vh'" class="page-2" [ngClass]="{'active': isPage2Active}">
+  <h4 class="text-center">Step1 - Create and Update Participants</h4>
+
+  <br />
+  <div class="video-container">
+    <!-- <video id="video-background2" autoplay muted loop>
+      <source src="assets/car-consumer2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video> -->
+  </div>
+
+  <div class="video-overlay">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a [routerLink]="['/Prosumer']">
+            <img class="card-img-top" src="assets/house-prosumer.jpg" alt="" />
+          </a>
+          <div class="card-body text-center">
+            <h4 class="card-title">
+              <a [routerLink]="['/Prosumer']">Add Prosumer</a>
+            </h4>
+            <p class="card-text">
+              Prosumers own coins and energy tokens that can be traded with
+              other prosumers and consumers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a [routerLink]="['/Consumer']">
+            <img class="card-img-top" src="assets/car-consumer.jpg" alt="" />
+          </a>
+          <div class="card-body text-center">
+            <h4 class="card-title">
+              <a [routerLink]="['/Consumer']">Add Consumer</a>
+            </h4>
+            <p class="card-text">
+              Consumers own coins and energy tokens that can be traded with
+              other prosumers and consumers.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+</div>
+<div [style.min-height]="'100vh'" class="page-3" [ngClass]="{'active': isPage2Active}">
+  <h4 class="text-center">Step2 - Execute Transactions</h4>
+
+  <br />
+
+  <div class="row justify-content-center align-items-center">
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a [routerLink]="['/Transaction']">
+          <img class="card-img-top" src="assets/transaction.jpg" alt="" />
+        </a>
+        <div class="card-body text-center">
+          <h4 class="card-title">
+            <a [routerLink]="['/Transaction']">Prosumer to Consumer</a>
+          </h4>
+          <p class="card-text">
+            Execute a transaction between Residents by exchanging Coins for
+            Energy
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div [style.min-height]="'100vh'" class="page-4" [ngClass]="{'active': isPage2Active}">
+  <h4 class="text-center">Step3 - Checkout Dashboard</h4>
+
+  <br />
+
+  <div class="row justify-content-center align-items-center">
+    <div class="col-lg-4 col-sm-6 portfolio-item">
+      <div class="card h-100">
+        <a [routerLink]="['/Dashboard']">
+          <img class="card-img-top" src="assets/dashboard.jpg" alt="" />
+        </a>
+        <div class="card-body text-center">
+          <h4 class="card-title">
+            <a [routerLink]="['/Dashboard']">Admin Dashboard</a>
+          </h4>
+          <p class="card-text">
+            View Residents' Tokens and Coins, and visualization of transactions
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
